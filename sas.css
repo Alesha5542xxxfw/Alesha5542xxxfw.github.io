@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;     
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif; 
+    /* background-image: url(oyzox30tkcw.jpg);  */
+}
+
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
+.wrapper{
+    width: 100%;
+    max-width: 629px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-bottom: 10px; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inner-header{
+    background-color:#383533; 
+    height: 93px;
+    max-width: 629px;
+    min-width: 346px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+	border:  #9A8B83 solid ;  
+}
+
+.content{
+    width: 100%;
+	float: auto;
+}
+
+.inner-content{
+    background-color: #E49C7A;
+    color: #EBFEE5;
+    height: 700px;
+    max-width: 629px;
+    min-width: 346px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    display: inline-block;
+	padding: 14px;
+    font-size: 16;
+    position: relative;
+    border: 4px #3A3836 dashed ;
+}
+
+.footer{
+	width: 100%;
+    margin-top: 10px;
+}
+
+.inner-footer{
+    background-color: #3A3836;
+    height: 80px; 
+    max-width: 629px;
+    min-width: 346px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: #9A8B83 solid ; 
+}
+
+.li1{
+    display:inline-block;
+    padding-top: 13px;
+    padding-right: 13px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+    color: black;
+    font-size: 14;
+    position: relative;
+    margin-top: 22px;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.li2{
+    display:inline-block;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    color: black;
+    font-size: 14;
+    position: relative;
+    margin-top: 22px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+a{ text-decoration: none; /* Отменяем подчеркивание у ссылки */ }
+
+.cool:hover{
+	zoom: 1.1;
+}
+
+::-webkit-scrollbar{
+    width: 11px;        /* общая ширина скроллбара */
+} 
+
+::-webkit-scrollbar-thumb{
+border-width: 1px 1px 1px 2px;      
+border-color: #2F3035;            /* (светлосерый фон, серая граница, делаем границу чуть толще с левой стороны) */
+background-color: #2F3035;
+border-radius: 10px;
+}   
+
+::-webkit-scrollbar-thumb:hover{
+border-width: 1px 1px 1px 2px;
+border-color: #555;           /* При наведении курсора (:hover) на полосу прокрутки делаем её более тёмной. */
+background-color: #777;
+}
+
+::-webkit-scrollbar-track{
+    border-width: 0;      /* Ползунок в неактивном состоянии будет выглядеть как сплошной прямоугольник серого цвета (без границы) */
+}
+
+::-webkit-scrollbar-track:hover{
+border-left: solid 1px #aaa;
+background-color: #eee;     /* При наведении курсора на ползунок, делаем его темнее и добавляем границу. */
+}
